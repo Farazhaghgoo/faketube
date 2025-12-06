@@ -1,3 +1,22 @@
 .thumbnail{
-    width: 270px;
+    width: 270px; 
+  display: block;
+  margin-top: 10px;
+}
+.video-author{
+    color: gray;
+    font-size: 14px;
+    
+}
+.video-stats{
+    color: gray;
+    font-size: 14px;
+    margin-top: -10px;
+    
+}
+
+body{
+    margin: 0; 
+}
+.video-stats,.video-author{display: inline-block;
 }
