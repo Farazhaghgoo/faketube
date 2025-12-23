@@ -2,18 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    position: sticky;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+
     height: 60px;
     background-color: white;
-    top: 0;
     flex-direction: row;
+    z-index: 100;
     
 }
 .first-section{
     display: flex;
     align-items: center;
-  
     width: 150px;
     
 }
@@ -66,7 +69,28 @@
     cursor: pointer;
     border-radius: 0 10px 10px 0;
     margin-right:10px; 
+    position: relative;
     
+}
+.search-bar-btn .tooltip {
+    position: absolute;
+    bottom: -40px;
+         left: 50%; 
+         transform: translateX(-50%);
+        width: 100%;
+        background-color: gray;
+        padding:6px 4px;
+        border-radius: 2px;
+        color: white;
+        font-family: 'Roboto', arial;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
+
+}
+.search-bar-btn:hover .tooltip {
+    opacity: 1;
 }
 .search-icon   {
     margin-top: 4px;
@@ -82,6 +106,7 @@
     cursor: pointer;
     
 }
+/* its a comment take care rabbit */
 .mic-icon{
     margin-top: 4px;
     height: 25px;
@@ -100,10 +125,34 @@
 }
 
 
+.upload-icon-container{  
+      position: relative;
 
+}
 .upload-icon {
     width: 24px;
     cursor: pointer;
+}
+.upload-icon-container .tooltip {
+  position: absolute;
+    bottom: -40px;
+        left: 50%; 
+         transform: translateX(-50%);
+
+        background-color: gray;
+        padding:6px 4px;
+        border-radius: 2px;
+        color: white;
+        font-family: 'Roboto', arial;
+        font-size: 13px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        pointer-events: none;
+        white-space:nowrap ;
+        
+}
+    .upload-icon-container:hover .tooltip {
+    opacity: 1;
 }
 .youtube-apps-icon {
     width: 24px;
@@ -119,6 +168,24 @@
     height: 34px;
     cursor: pointer;
     border-radius: 17px;
+    
+}
+.notifications-icon-container{
+    position: relative;
+
+}
+.notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -4px;
+    background-color: rgb(205, 27, 27);
+    color: white;
+    font-family: 'Roboto', arial;
+    font-size: 11px;
+    padding: 2PX 5PX;
+    border-radius:10PX; 
+    font-weight: 500;
+   
     
 }
 

@@ -2,4 +2,8 @@ p{
     margin: 0;
     font-family: 'Roboto', arial;
 }
-
+body{
+    background-color: #f9f9f9;
+    padding-top: 80px;
+    padding-left: 96px;
+}
