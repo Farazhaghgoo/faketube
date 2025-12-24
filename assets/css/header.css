@@ -30,6 +30,23 @@
     cursor: pointer;
 }
 
+.brand-logo{
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    font-size: 20px;
+    text-transform: lowercase;
+    color: #111;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.brand-logo .accent{
+    color: #e62117;
+    font-weight: 900;
+}
+
 .second-section{
     flex: 1;
     margin-left: 70px;
