@@ -2,8 +2,16 @@ p{
     margin: 0;
     font-family: 'Roboto', arial;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: #f9f9f9;
     padding-top: 80px;
-    padding-left: 96px;
+    padding-left: 80px;
+    padding-right: 16px;
 }

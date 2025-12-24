@@ -49,12 +49,13 @@
 
 .video-preview-grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
-    row-gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px 18px;
+    width: 100%;
+    margin: 0;
+    padding: 12px 8px 32px 8px;
+    background: none;
+    box-shadow: none;
 }
 
 
